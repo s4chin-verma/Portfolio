@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { author } from '@/lib/author';
+import { author } from '@/lib/content/author';
 import { NavButton, NavItem, DarkModeBtn } from '@/components';
-import { navbarSection } from '@/lib/navbar';
+import { navbarSection } from '@/lib/content/navbar';
 import { Author } from '@/components';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { slideIn } from '@/animation/animation';
-import useWindowWidth from '@/contexts/WindowWidth';
+import useWindowWidth from '@/lib/contexts/WindowWidth';
 
 const Header = () => {
    const [navbarCollapsed, setNavbarCollapsed] = useState(false);
@@ -33,8 +33,7 @@ const Header = () => {
                href={url}
                onClick={() => setNavbarCollapsed(false)}
                index={i}
-               delay={ANIMATION_DELAY}
-            >
+               delay={ANIMATION_DELAY}>
                {name}
             </NavItem>
          ))}
@@ -44,8 +43,7 @@ const Header = () => {
                direction: 'down',
             })}
             initial="hidden"
-            animate="show"
-         >
+            animate="show">
             <DarkModeBtn onClick={() => setNavbarCollapsed(false)} />
          </motion.div>
       </ul>
@@ -56,16 +54,14 @@ const Header = () => {
          variants={headerVariants}
          animate={hidden ? 'hidden' : 'visible'}
          transition={{ type: 'spring', opacity: 1 }}
-         className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4  md:px-6 xl:px-12 backdrop-blur-sm"
-      >
+         className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4  md:px-6 xl:px-12 backdrop-blur-sm">
          <motion.div
             variants={slideIn({
                delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
                direction: 'down',
             })}
             initial="hidden"
-            animate="show"
-         >
+            animate="show">
             <Author href={'#home'} children={author.name} />
          </motion.div>
 

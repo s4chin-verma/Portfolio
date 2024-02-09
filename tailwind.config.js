@@ -22,8 +22,15 @@ export default {
             'dark-2': 'var(--color-dark-2)',
             'dark-3': 'var(--color-dark-3)',
          },
+         transitionTimingFunction: {
+            'in-scroll': 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+         },
          boxShadow: {
             custom: '2px 2px 100px 0px rgba(0, 0, 0, 0.2)',
+         },
+         gridTemplateColumns: {
+            'auto-300': 'repeat(auto-fill, minmax(300px, 1fr))',
+            'auto-250': 'repeat(auto-fill, minmax(250px, 1fr))',
          },
          backgroundImage: {
             torch: 'radial-gradient(525px at 50% 50%, var(--color-accent-torch), transparent 80%)',

@@ -1,5 +1,5 @@
 import { ProjectsSectionType } from '@/lib/types/sections';
-import { StringKeyValueType } from './types';
+import { StringKeyValueType } from '../types';
 
 export const projectTitle: StringKeyValueType = {
    title: 'Projects',

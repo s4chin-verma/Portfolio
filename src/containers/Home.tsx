@@ -1,8 +1,8 @@
-import { HomeSection } from '@/lib/home';
+import { HomeSection } from '@/lib/content/home';
 import { motion } from 'framer-motion';
 import { Button } from '@/components';
 import { slideUp } from '@/animation/animation';
-import useWindowWidth from '@/contexts/WindowWidth';
+import useWindowWidth from '@/lib/contexts/WindowWidth';
 
 export default function Home() {
    const { title, subtitle, tagline, specialText, description } = HomeSection;

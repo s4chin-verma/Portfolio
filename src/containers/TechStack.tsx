@@ -1,6 +1,6 @@
 import AnimatedData from '@/assets/lotties/frontend-dark.json';
 import { TechIcon } from '@/components';
-import { techTitle, techIconSection } from '@/lib/techStack';
+import { techTitle, techIconSection } from '@/lib/content/techStack';
 import { AnimatedImage } from '@/components';
 import { motion } from 'framer-motion';
 import { getSectionAnimation } from '@/animation/animation';
@@ -15,18 +15,18 @@ export default function TechStack() {
             {heading}
          </h2>
          <h3 className="text-xl md:text-4xl text-text text-center mb-10 md:mb-20">{subHeading}</h3>
-         <div className="flex flex-col-reverse item-center gap-10 md:flex-row md:justify-between items-center md:gap-40">
-            <AnimatedImage data={AnimatedData} />
-            <div className="flex flex-wrap gap-10 md:gap-16 justify-center">
+         <div className="flex gap-8 sm:gap-10 flex-col lg:flex-row items-center odd:lg:flex-row-reverse">
+            <div className="flex flex-wrap gap-10 md:gap-16 justify-center lg:w-1/2">
                {techIcons.map((icon, index) => (
                   <TechIcon
                      key={index}
                      icon={icon.icon}
                      name={icon.name}
-                     classname="h-12 w-12 md:w-20 md:h-20"
+                     classname="h-12 w-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
                   />
                ))}
             </div>
+            <AnimatedImage data={AnimatedData} classname="lg:w-1/2" />
          </div>
       </motion.section>
    );

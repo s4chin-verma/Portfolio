@@ -11,7 +11,6 @@
       "host": "vite --host"
    },
    "dependencies": {
-      "@iconify/react": "^4.1.1",
       "framer-motion": "^10.18.0",
       "lottie-react": "^2.4.0",
       "react": "^18.2.0",
@@ -19,11 +18,11 @@
       "react-router-dom": "^6.21.2"
    },
    "devDependencies": {
+      "@iconify/react": "^4.1.1",
       "@types/node": "^20.11.0",
       "@types/react": "^18.2.43",
       "@types/react-dom": "^18.2.17",
       "@types/react-lottie": "^1.2.10",
-      "@types/tailwindcss": "^3.1.0",
       "@typescript-eslint/eslint-plugin": "^6.14.0",
       "@typescript-eslint/parser": "^6.14.0",
       "@vitejs/plugin-react": "^4.2.1",
@@ -36,7 +35,6 @@
       "postcss-nesting": "^12.0.2",
       "prettier": "^3.2.4",
       "prettier-plugin-tailwindcss": "^0.5.11",
-      "sass": "^1.69.7",
       "tailwindcss": "^3.4.1",
       "typescript": "^5.2.2",
       "vite": "^5.0.8"

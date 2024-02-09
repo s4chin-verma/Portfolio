@@ -1,4 +1,4 @@
-import { socialSection } from '@/lib/social';
+import { socialSection } from '@/lib/content/social';
 import { SocialIcon } from '@/components';
 import { fadeIn } from '@/animation/animation';
 import { motion } from 'framer-motion';
@@ -10,8 +10,7 @@ const SocialLinks = () => {
          variants={fadeIn(2.1)}
          initial="hidden"
          animate="show"
-         className="fixed bottom-0 flex-col items-center hidden md:flex left-6 xl:left-12"
-      >
+         className="fixed bottom-0 flex-col items-center hidden md:flex left-6 xl:left-12">
          <ul>
             {socialLinks.map(({ icon, url }) => (
                <SocialIcon key={url} icon={icon} url={url} />

@@ -1,4 +1,4 @@
-import { FooterSectionType } from './types/sections';
+import { FooterSectionType } from '../types/sections';
 
 export const footerSection: FooterSectionType = {
    title: `What's Next`,

@@ -1,4 +1,4 @@
-import { HomeSectionType } from './types/sections';
+import { HomeSectionType } from '../types/sections';
 
 export const HomeSection: HomeSectionType = {
    subtitle: 'Hi, my name is',

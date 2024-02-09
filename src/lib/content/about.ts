@@ -1,4 +1,4 @@
-import { AboutSectionType } from './types/sections';
+import { AboutSectionType } from '../types/sections';
 
 export const aboutSection: AboutSectionType = {
    title: 'About',

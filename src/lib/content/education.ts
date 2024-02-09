@@ -1,4 +1,4 @@
-import { EducationSectionType } from './types/sections';
+import { EducationSectionType } from '../types/sections';
 
 export const educationItem: EducationSectionType = {
    education: [

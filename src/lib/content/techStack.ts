@@ -1,5 +1,5 @@
-import { StringKeyValueType } from './types';
-import { TechSectionType } from './types/sections';
+import { StringKeyValueType } from '../types';
+import { TechSectionType } from '../types/sections';
 
 export const techTitle: StringKeyValueType = {
    heading: 'My Tech Stack',
@@ -40,6 +40,10 @@ export const techIconSection: TechSectionType = {
       {
          name: 'React Js',
          icon: 'logos:react',
+      },
+      {
+         name: 'Redux Js',
+         icon: 'logos:redux',
       },
       {
          name: 'Node Js',

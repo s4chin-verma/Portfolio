@@ -1,4 +1,4 @@
-import { projectTitle, projectsSection } from '@/lib/project';
+import { projectTitle, projectsSection } from '@/lib/content/project';
 import { motion } from 'framer-motion';
 import { ProjectCard } from '@/components';
 import { getSectionAnimation } from '@/animation/animation';
@@ -23,7 +23,7 @@ export default function Projects() {
             <motion.h3 className="text-xl md:text-4xl text-text text-center mb-10 md:mb-20">
                {subTitle}
             </motion.h3>
-            <motion.div className="flex gap-20 items-center flex-col md:flex-row md:justify-between">
+            <motion.div className="grid gap-8 grid-cols-auto-250 xs:grid-cols-auto-300 place-items-center">
                {projects.map((project, index) => (
                   <ProjectCard
                      {...project}

@@ -6,11 +6,7 @@ type PropType = {
 };
 
 const AnimatedImage = ({ data, classname }: PropType) => {
-   return (
-      <div className="">
-         <Lottie autoplay loop animationData={data} className={`${classname}`} />
-      </div>
-   );
+   return <Lottie autoplay loop animationData={data} className={`${classname}`} />;
 };
 
 export default AnimatedImage;

@@ -1,5 +1,5 @@
 import { SocialIcon } from '@/components';
-import { socialSection } from '@/lib/social';
+import { socialSection } from '@/lib/content/social';
 
 const FooterLinks = () => {
    const { socialLinks } = socialSection;

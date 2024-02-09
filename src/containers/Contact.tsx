@@ -1,7 +1,7 @@
 import { AnimatedImage } from '@/components';
-import { footerSection } from '@/lib/contact';
+import { footerSection } from '@/lib/content/contact';
 import { Button } from '@/components';
-import { author } from '@/lib/author';
+import { author } from '@/lib/content/author';
 import { getSectionAnimation } from '@/animation/animation';
 import { motion } from 'framer-motion';
 import contact from '@/assets/lotties/Contact.json';
@@ -11,12 +11,12 @@ const Contact = () => {
    return (
       <motion.section id="contact" animate={false} {...getSectionAnimation} className="py-24 md:py-28">
          <div className="mt-6 md:mt-0 flex flex-col items-center md:gap-20 gap-3">
-            <h2 className="md:text-5xl text-center mb-2 md:mb-10 text-lg sm:text-4xl capitalize font-mono md:font-medium sm:mb-12 text-accent md:text-dark-2">
+            <h2 className="md:text-5xl text-center mb-8 md:mb-10 text-lg sm:text-4xl capitalize font-mono md:font-medium sm:mb-12 text-accent lg:text-dark-2">
                {title}
             </h2>
-            <div className="flex flex-col-reverse justify-center items-center gap-20 md:flex-row md:items-center md:justify-center md:gap-24">
-               <AnimatedImage data={contact} classname={'w-60 md:w-96 '} />
-               <div className=" flex justify-center flex-col items-center gap-7 md:w-[40rem]">
+            <div className="flex gap-8 sm:gap-16 flex-col lg:flex-row lg:justify-between items-center odd:lg:flex-row-reverse">
+               <AnimatedImage data={contact} classname={'lg:w-1/3 md:w-1/2'} />
+               <div className=" flex justify-center flex-col items-center gap-7 ">
                   <h3 className="text-center text-2xl md:text-3xl text-dark-2">{heading}</h3>
                   <h5 className="text-center text-base md:text-xl text-text">{paragraph}</h5>
                   <Button children={'Say Hello'} url={`mailto:${author.email}`} />

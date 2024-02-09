@@ -1,5 +1,5 @@
-import { aboutSection } from '@/lib/about';
-import { educationItem } from '@/lib/education';
+import { aboutSection } from '@/lib/content/about';
+import { educationItem } from '@/lib/content/education';
 import { Education } from '@/components';
 import { getSectionAnimation } from '@/animation/animation';
 import { motion } from 'framer-motion';
