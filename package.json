@@ -10,7 +10,7 @@
       "preview": "vite preview",
       "host": "vite --host"
    },
-   "dependencies": {
+   "dependencies": { 
       "framer-motion": "^10.18.0",
       "lottie-react": "^2.4.0",
       "react": "^18.2.0",
