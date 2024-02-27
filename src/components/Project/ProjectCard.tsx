@@ -29,8 +29,8 @@ const ProjectCard = ({ name, url, repo, year, img, tags, ...rest }: ProjectCardP
                />
             </div>
             <div className="p-4 py-3 space-y-1 min-h-20">
-               <div className="flex items-center justify-between">
-                  <p className="font-mono text-xs capitalize">{tags.join(' | ')}</p>
+               <div className="flex items-start justify-between">
+                  <p className="font-mono text-xs capitalize text-start">{tags.join(' | ')}</p>
                   <div className="flex items-center space-x-1.5">
                      <a href={repo} className="block duration-200 hover:text-accent" target="_blank">
                         <Icon icon="tabler:brand-github" width={20} height={20} />

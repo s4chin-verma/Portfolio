@@ -15,7 +15,7 @@ export const projectsSection: ProjectsSectionType = {
          name: 'Pixel-Pipers',
          url: 'https://pixel-pipers.vercel.app/',
          repo: 'https://github.com/s4chin-verma/pixel-pipers',
-         img: '/portfolio.webp',
+         img: '/chat.webp',
          year: 2024,
          tags: ['ReactTs', 'Redux', 'Tailwind CSS'],
       },
