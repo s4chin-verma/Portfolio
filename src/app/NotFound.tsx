@@ -10,7 +10,7 @@ const NotFound = () => {
             <div className="w-full max-w-xl flex flex-col items-center">
                <AnimatedImage data={Error} classname="mx-auto md:w-[400px]" />
                <p className="mt-5 text-3xl capitalize md:text-4xl text-dark-2">page not found</p>
-               <Button url={'/'} classname="mt-8" children={'Go Home'} />
+               <Button url={'/'} className="mt-8" children={'Go Home'} />
             </div>
          </div>
          <Email />
