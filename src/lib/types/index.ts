@@ -14,6 +14,7 @@ export type TechSkillsType = {
 };
 
 export type ProjectType = {
+   id: string;
    name: string;
    url: string;
    year: number;

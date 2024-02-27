@@ -20,7 +20,7 @@ const Education = ({ standard, institution, location, time, ...rest }: propType 
       <>
          <motion.div {...rest} className="flex flex-col md:gap-4 gap-2 mt-12 md:mt-16">
             <div className="flex flex-row justify-between gap-2">
-               <h2 className="text-base md:text-3xl font-normal tracking-wider text-text">{standard}</h2>
+               <h2 className="text-base sm:text-2xl font-normal tracking-wider text-text">{standard}</h2>
                <div className="time-status flex justify-center items-center w-20 h-7 md:w-32 md:h-9 rounded-3xl bg-green-200 text-green-800 text-xs md:text-base">
                   Full Time
                </div>

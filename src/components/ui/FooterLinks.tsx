@@ -6,7 +6,7 @@ const FooterLinks = () => {
    return (
       <ul className="flex justify-center gap-3 mb-1 md:hidden">
          {socialLinks.map(({ icon, url }) => (
-            <SocialIcon icon={icon} url={url} />
+            <SocialIcon key={url} icon={icon} url={url} />
          ))}
       </ul>
    );

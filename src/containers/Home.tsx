@@ -13,7 +13,7 @@ export default function Home() {
    return (
       <section
          id="home"
-         className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-7 xs:mt-0 py-24 md:py-32">
+         className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-4 xs:mt-0 py-24 md:py-32">
          <motion.p
             variants={slideUp({ delay: getAnimationDelay(0) })}
             initial="hidden"
@@ -25,14 +25,14 @@ export default function Home() {
             variants={slideUp({ delay: getAnimationDelay(1) })}
             initial="hidden"
             animate="show"
-            className="name text-text text-4xl md:text-7xl font-bold capitalize  ">
+            className="name text-text text-4xl md:text-6xl font-bold capitalize  ">
             {title}
          </motion.h1>
          <motion.h1
             variants={slideUp({ delay: getAnimationDelay(2) })}
             initial="hidden"
             animate="show"
-            className="text-text text-4xl md:text-7xl font-bold capitalize">
+            className="text-text text-4xl md:text-6xl font-bold capitalize">
             {tagline}
          </motion.h1>
          <motion.p
@@ -51,7 +51,7 @@ export default function Home() {
          </motion.p>
 
          <motion.div variants={slideUp({ delay: getAnimationDelay(5) })} initial="hidden" animate="show">
-            <Button url={'/Sachin_Resume.pdf'} children={'Download CV'} classname={'mt-3'} />
+            <Button url={'/Sachin_Resume.pdf'} children={'Download CV'} className={'mt-3'} />
          </motion.div>
       </section>
    );

@@ -11,18 +11,16 @@ export default function TechStack() {
 
    return (
       <motion.section id="skills" animate={false} {...getSectionAnimation} className="py-24 md:py-32">
-         <h2 className="md:text-5xl text-center  md:mb-10 text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2">
-            {heading}
-         </h2>
-         <h3 className="text-xl md:text-4xl text-text text-center mb-10 md:mb-20">{subHeading}</h3>
+         <h2 className="heading-primary">{heading}</h2>
+         <h3 className="heading-secondary">{subHeading}</h3>
          <div className="flex gap-8 sm:gap-10 flex-col lg:flex-row items-center odd:lg:flex-row-reverse">
-            <div className="flex flex-wrap gap-10 md:gap-16 justify-center lg:w-1/2">
+            <div className="flex flex-wrap gap-10 md:gap-14 justify-center lg:w-1/2">
                {techIcons.map((icon, index) => (
                   <TechIcon
                      key={index}
                      icon={icon.icon}
                      name={icon.name}
-                     classname="h-12 w-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+                     classname="h-10 w-10 sm:w-12 sm:h-12 md:w-16 md:h-16"
                   />
                ))}
             </div>

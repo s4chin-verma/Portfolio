@@ -6,7 +6,6 @@ import TechIcon from './Icon/TechIcon';
 import EducationIcon from './Education/EducationIcon';
 import NavItem from './Nav/NavItem';
 import NavLink from './Nav/NavLink';
-import ProjectLink from './Project/ProjectLink';
 import Author from './ui/Author';
 import Education from './Education/Education';
 import FooterLinks from './ui/FooterLinks';
@@ -23,7 +22,6 @@ export {
    NavButton,
    NavItem,
    NavLink,
-   ProjectLink,
    Author,
    Education,
    FooterLinks,

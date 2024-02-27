@@ -11,7 +11,7 @@ const About: React.FC = () => {
    return (
       <>
          <motion.section id="about" animate={false} {...getSectionAnimation} className="py-24 md:py-32">
-            <h2 className="md:text-5xl text-center md:mb-10 text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2">
+            <h2 className="heading-primary">
                {title}
             </h2>
             <p className="text-text text-justify text-base md:text-xl leading-relaxed">
@@ -20,7 +20,7 @@ const About: React.FC = () => {
                {subContent}
             </p>
 
-            <h2 className="md:text-5xl my-16 text-center text-3xl sm:text-4xl capitalize font-medium text-dark-2">
+            <h2 className="heading-primary mt-6 sm:mt-10">
                Education
             </h2>
             <div>

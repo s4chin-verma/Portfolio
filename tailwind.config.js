@@ -5,7 +5,7 @@ export default {
    theme: {
       extend: {
          fontFamily: {
-            signature: ['agustina', 'sans-serif'], 
+            signature: ['agustina', 'sans-serif'],
             sans: ['Inter', 'sans-serif'],
             mono: ['Roboto Mono', 'monospace'],
          },
