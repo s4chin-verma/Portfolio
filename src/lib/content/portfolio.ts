@@ -25,7 +25,7 @@ export const seoData = {
     'Sachin Verma is a full-stack developer who specializes in building exceptional visual interfaces with seamless backend services.',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
+    'https://res.cloudinary.com/dnpji7f84/image/upload/v1717356557/Portfolio/s4chin-verma-portfolio.png',
   url: 'https://s4chin.vercel.app/',
   keywords: [
     'Sachin',

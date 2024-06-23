@@ -55,7 +55,7 @@ export const projectsSection: ProjectsSectionType = {
       name: 'Travel Website',
       url: 'https://jadoo-five-murex.vercel.app/',
       repo: 'https://github.com/s4chin-verma/Jadoo',
-      img: 'https://res.cloudinary.com/dnpji7f84/image/upload/v1717356826/Portfolio/Screenshot_from_2024-06-03_01-03-24_k9bhbs.png',
+      img: 'https://res.cloudinary.com/dnpji7f84/image/upload/v1717356826/Portfolio/thumbnail.png',
       year: 2023,
       tags: ['HTML', 'CSS'],
     },
