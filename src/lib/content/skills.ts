@@ -35,6 +35,8 @@ export const skillsSection: SkillsSectionType = {
         { name: 'node js', icon: 'logos:nodejs-icon' },
         { name: 'express js', icon: 'skill-icons:expressjs-dark' },
         { name: 'Mongo DB', icon: 'skill-icons:mongodb' },
+        { name: 'GraphQL', icon: 'logos:graphql' },
+        { name: 'Prisma', icon: 'vscode-icons:file-type-prisma' },
       ],
     },
     {
