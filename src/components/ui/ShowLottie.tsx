@@ -1,17 +1,19 @@
 'use client';
-import { Player } from '@lottiefiles/react-lottie-player';
+
+import dynamic from 'next/dynamic';
+
+// Dynamically import the Lottie component with SSR disabled
+const LottieComponent = dynamic(() => import('./LottieComponent'), {
+  ssr: false, // This will disable server-side rendering for this component
+});
 
 type Props = {
-  path: any;
+  jsonPath: string;
   className?: string;
 };
 
-const ShowLottie = ({ path, className = '' }: Props) => {
-  return (
-    <div className={`max-w-sm md:max-w-md ${className}`}>
-      <Player autoplay loop src={path}></Player>
-    </div>
-  );
+const ShowLottie = (props: Props) => {
+  return <LottieComponent {...props} />;
 };
 
 export default ShowLottie;
